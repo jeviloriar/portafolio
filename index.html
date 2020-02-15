@@ -1,148 +1,286 @@
 <!DOCTYPE html>
 <html>
-<title>Curriculum Jorge Viloria</title>
+<title>Portafolio JV</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/raleway.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
 
-<body class="w3-light-grey">
+<body class="w3-light-grey w3-content" style="max-width:1600px">
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar">
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="imagenes/avatar_hat.jpg" style="width:100%;" class="w3-round centrado">
+    <h3 class="w3-center"><b>Jorge Viloria</b></h3>
+    <p class="w3-center w3-text-grey">Sig, Catastro, Cartografía digital y Desarrollo Web</p>
+  <div class="w3-bar-block w3-large"">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Portafolio</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Sobre mí</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>Contacto</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-twitter w3-hover-opacity"> @jeviloriar</i>
+    <i class="fa fa-linkedin w3-hover-opacity"> jorge-viloria-658013118</i>
+    <i class="fa fa-github-alt w3-hover-opacity"> jeviloriar</i>	
+  </div>
+</nav>
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="imagenes/avatar_hat.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>Mi Portafolio</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <button class="w3-button w3-black">Principal</button>
+      <a href="html/blog.html"><button class="w3-button w3-white">Blog</button></a>
+      <a href="html/curriculum.html"><button class="w3-button w3-white">Curriculum</button></a>
+      <button class="w3-button w3-white">Contenido</button>
+    </div>
+    </div>
+  </header>
   
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="imagenes/avatar_hat.jpg" style="width:100%" alt="Avatar">		
-        </div>
-		<div class=".w3-display-topleft w3-container w3-text-black">
-            <h2>Jorge E. Viloria R.</h2>
-        </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Leader Gis, Cadastre and Cartografy.</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Ojeda City / Zulia / Venezuela.</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>jeviloriar@gmail.com.</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+58 416 66 81964.</p>
-          <hr>
-
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills.</b></p>
-          <p>Geograph Information System (Gis).</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-          </div>
-          <p>Software Gis: ArcGis/QGis/GvSig.</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-              <div class="w3-center w3-text-white">80%</div>
-            </div>
-          </div>
-		  <p>Programming Gis: Python/VisualScrip/Aml/Aveniu.</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">
-              <div class="w3-center w3-text-white">70%</div>
-            </div>
-          </div>
-		  <p>Programming Web: Html/JaveScript/Php.</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:65%">
-              <div class="w3-center w3-text-white">65%</div>
-            </div>
-          </div>
-          <p>Cartografy/Spacial Analisis.</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-          </div>
-          <p>Catastro.</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-          </div>
-          <br>
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages.</b></p>
-          <p>Spanish</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal w3-center" style="height:24px;width:100%">100%</div>
-          </div>
-          <p>English</p>
-          <div class="w3-light-grey w3-round-xlarge w3-center">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:75%">75%</div>
-          </div>
-           <br>
-        </div>
-      </div><br>
-
-    <!-- End Left Column -->
-    </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience.</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Leader Gis, Cadastre and Cartografy / Petroleum of Venezuela.</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2004 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Management of rural cadastre projects, thematic cartography, spatial analysis with applications in Gis and advice on projects to enable spaces for oil projects.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Analyst Gis, Data Spacialist / Socodec Venezuela (SNC Lavalin Group).</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2002 - Dec 2002.</h6>
-          <p>Edition of cadastral data coverage, generation of thematic cartography and spatial database design in Oracle environment.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Leader Gis, Cadastre and Cartografy / Sistema Hidráulico Trujillano, S.A.</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 1993 - Feb 2002.</h6>
-          <p>GIS project management, GIS application programming, thematic cartography and spatial analysis. </p><br>
-        </div>
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="imagenes/cartografia-basica.jpg" alt="cartografia" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Cartografía básica</b></p>
+        <p>Desarrollo de proyectos para generación de cartografía básica con diferentes fuentes de datos, para ser compartida en medios digitales o ser incrustadas en sitios web de manera profesional.</p>
       </div>
-
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education.</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>University of Girona (Spain).</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2005-2007.</h6>
-          <p>Master of Science in GIS (OnLine).</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>University of Valle del Momboy (Venezuela).</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>1996 - 2002.</h6>
-          <p>Licenciado en Administración de Empresas.</p><br>
-        </div>
-		<div class="w3-container">
-          <h5 class="w3-opacity"><b>PhotoSur Geomatic International (Canada).</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>1997 - 2000.</h6>
-          <p>Specialized Training in GIS.</p>
-          <hr>
-        </div>
-      </div>
-
-    <!-- End Right Column -->
     </div>
-    
-  <!-- End Grid -->
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="imagenes/catastro.jpg" alt="catastro" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Catastro</b></p>
+        <p>Planificación de proyectos catastrales para identificacion predial y levantamientos catastrales en áreas rulales y urbanas para genereación de mapas catastrales y planos de mensuras.</p>
+      </div>
+    </div>
+     <div class="w3-third w3-container w3-margin-bottom">
+      <img src="imagenes/analisis-espacial.jpg" alt="Análisis espacial" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Análisis espacial</b></p>
+        <p>Generación de modelos digitales de terreno, imágenes 3D y modelado de factories ambientales, conservación de cuencas y soporte cartográfico a estudios de impacto ambiental.</p>
+      </div>
+    </div>
   </div>
   
-  <!-- End Page Container -->
-</div>
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+     <img src="imagenes/Curso_geodatos.jpg" alt="Geodatos" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-container w3-white">
+      <p><b>Curso Geodatos</b></p>
+      <p>De la mano de Geoinnova, se ofrece esta propuesta de educación en línea, dirigida a profesionales y estudiantes que deseen conocer la forma de sacar el mayor provecho a los geodatos en el entorno web.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="imagenes/sig-web.jpg" alt="Sig-web" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Curso SIG web</b></p>
+        <p>Otra excenete propuesta de enseñanza en línea, con este curso el participante desarrollará habilidades para gestionar proyectos SIG en entornos web.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="imagenes/visor-grafico.jpg" alt="visor" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Visores web</b></p>
+        <p>Diseño y desarrollo de visores y mapas interactivos para ser incrustados en sitios web de manera profesional, para dar funcionalidades SIG a portales.</p>
+      </div>
+    </div>
+  </div>
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <a href="https://www.facebook.com/jeviloriar/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity fa-2x" ></i></a>
-  <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"><i class="fa fa-instagram w3-hover-opacity fa-2x"></i></a>
-  <a href="https://www.twitter.com/jeviloriar/" target="_blank"><i class="fa fa-twitter w3-hover-opacity fa-2x"></i></a>
-  <a href="https://www.linkedin.com/in/jorge-viloria-658013118/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity fa-2x"></i></a>
-  <a href="https://www.plus.google.com/jeviloriar/" target="_blank"><i class="fa fa-google-plus-square w3-hover-opacity fa-2x"></i></a>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a> 
+    </div>
+  </div>
+
+  <!-- Images of Me -->
+  <div class="w3-row-padding w3-padding-16" id="about">
+    <div class="w3-col m6">
+      <img src="imagenes/jorge-viloria.png" alt="jorge-viloria" style="width:40%" class="transparente">
+    </div>
+  </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>Sobre mí</b></h4>
+    <p>Soy especialista en Sistemas de Información Geografica (SIG), catastro y cartografía digital, con amplia experiencia en gestión de proyectos el área de las geociencias y desarrollo de propuestas para educación en línea.</p>
+	<p>Durante más de veinte años he desempeñado actividades de desarrollo y gestión de proyectos SIG, en especial en el área petroléra y agrícola, valorando propuestas de ubicación óptimas para construcción de infraestructura petrolera.</p>
+	<p>En la actualidad ofrezco mis experiencias para asesoramiento de proyectos en SIG, catastro, cartografía digital y desarrollo web, participando de manera colaborativa en la integración, valoración, análisis y gestión de datos geográficos para apalancar proyectos de toda indóle.</p>
+	<p>También participo en desarrollo de proyectos web con funcionalidades de analisis SIG, para implementar visores de datos geográficos y mapas interactivos en sitios web.</p>
+	<p>A nivel educativo, desarrollo propuestas para la enseñanza de las geotecnologías, mediante el desarrollo de cursos especializados en SIG, catastro y cartografía digital.</p>
+    <hr>
+    
+    <h4>Habilidades técnicas</h4>
+    <!-- Progress bars / Skills -->
+    <p>Sistemas de información Geográfica (SIG)</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
+    </div>
+    <p>Catastro</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+    </div>
+    <p>Cartografia</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
+    </div>
+    <hr>
+    
+    <h4>Honorarios Profesionales</h4>
+    <!-- Pricing Tables -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-black w3-xlarge w3-padding-32">Asesoría Básica</li>
+          <li class="w3-padding-16">Revisión de propuestas</li>
+          <li class="w3-padding-16">Gestión básica de geodatos</li>
+          <li class="w3-padding-16">Mapas básicos</li>
+          <li class="w3-padding-16">Analisis de datos</li>
+          <li class="w3-padding-16">
+            <h2>$ 10</h2>
+            <span class="w3-opacity">por propuesta</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-teal w3-xlarge w3-padding-32">Asesoría Pro</li>
+          <li class="w3-padding-16">Análisis web</li>
+          <li class="w3-padding-16">Diseño de geodatabase</li>
+          <li class="w3-padding-16">Gestión integral de geodatos</li>
+          <li class="w3-padding-16">Cartografía digital</li>
+          <li class="w3-padding-16">
+            <h2>$ 20</h2>
+            <span class="w3-opacity">por propuesta</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="w3-third">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-black w3-xlarge w3-padding-32">Asesoría Premium</li>
+          <li class="w3-padding-16">Desarrollo web</li>
+          <li class="w3-padding-16">Cartografía digital</li>
+          <li class="w3-padding-16">Análisis espacial</li>
+          <li class="w3-padding-16">Proyectos colaborativos</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">por propuestas</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contáctame</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>jeviloriar@gmail.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Ciudad Ojeda, Venezuela</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>(051) 416-6681964</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Nombre y Apellido:</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email:</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Mensaje:</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Envíar mensaje</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+	  <h3>Portafolio Jorge Viloria</h3>
+      <p>2020, todos los derechos reservados.</p>
+      <p>Basado en <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>Aliados:</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <a href= "https://geoinnova.org/" target="_blank" style="text-decoration:none"> <span class="w3-large">Geoinnova</span></a>
+        </li>
+        <li class="w3-padding-16">
+          <a href= "https://hablemosdesig.blogspot.com/" target="_blank" style="text-decoration:none"><span class="w3-large">Hablemos de Sig</span></a>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3>Etiquetas:</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">sig</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">cartografía</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">catastro</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">mapas</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">geoservicios</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">educación</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">desarrollo web</span>
+      </p>
+    </div>
+  </div>
+  </footer>
+<!-- End page content -->
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
 
 </body>
 </html>

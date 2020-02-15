@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": "urbanismo.0", "osm_way_id": 672887952, "name": "Conjunto Residencial Canaima", "landuse": "residential", "other_tags": "\"addr:city\"=>\"Ciudad Ojeda\",\"addr:housenumber\"=>\"L\",\"addr:postcode\"=>\"4019\",\"addr:street\"=>\"Carretera L\",\"building:levels\"=>\"2\",\"height\"=>\"8\"" }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -71.3132079, 10.2118248 ], [ -71.3135693, 10.2116205 ], [ -71.3137525, 10.2119402 ], [ -71.3139081, 10.2118545 ], [ -71.31401, 10.2120401 ], [ -71.3138131, 10.2121408 ], [ -71.3138819, 10.2122959 ], [ -71.3135498, 10.2124594 ], [ -71.3133861, 10.2121637 ], [ -71.3132079, 10.2118248 ] ] ] ] } }
+]
+}

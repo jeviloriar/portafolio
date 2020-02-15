@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/Raleway/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
+  src: url(../fonts/Raleway/Raleway-Regular.ttf) format('truetype');
+}
+
+
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif};
+
+ 
